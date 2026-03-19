@@ -14,11 +14,11 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * João Victor Machado Dorta Silva 
 * Afonso Provesi Neto
 * Pedro Victor Costa Barbosa
-* Nome completo do aluno 4
+* José Ulisses Bueno
 
 ## Orientador
 
-* Diego
+* Diego Roberto Gonçalves de Pontes
 
 ## Instruções de utilização
 
