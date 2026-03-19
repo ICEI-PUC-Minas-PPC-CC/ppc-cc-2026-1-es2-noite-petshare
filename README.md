@@ -1,10 +1,10 @@
-# TÍTULO DO PROJETO
+# PetShare
 
-`CURSO`
+`Ciência da Computação`
 
-`DISCIPLINA`
+`Engenharia de Software 2`
 
-`SEMESTRE`
+`7º Semestre`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
@@ -18,7 +18,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Diego
 
 ## Instruções de utilização
 
