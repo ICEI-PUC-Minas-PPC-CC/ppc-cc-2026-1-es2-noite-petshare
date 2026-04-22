@@ -1,46 +1,137 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O **PetShare** é uma aplicação web/mobile que tem como objetivo conectar donos de animais de estimação a cuidadores disponíveis para prestar serviços temporários. A proposta surge a partir de uma necessidade real observada no cotidiano: a dificuldade em encontrar pessoas confiáveis para cuidar de pets em situações específicas, como viagens, compromissos profissionais ou imprevistos.
+
+O sistema busca oferecer uma plataforma prática, segura e acessível, facilitando a comunicação entre as partes e tornando o processo de encontrar cuidadores mais ágil e eficiente.
+
+---
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Atualmente, donos de animais de estimação enfrentam dificuldades ao precisar deixar seus pets sob os cuidados de terceiros por um determinado período. Situações como viagens, jornadas de trabalho extensas ou compromissos inesperados tornam essa necessidade recorrente.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+O problema se agrava devido à falta de divulgação e centralização de serviços de cuidado de pets, especialmente em determinadas regiões. Como consequência, a solução mais comum adotada pelos donos é recorrer a amigos ou familiares.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Entretanto, esse modelo apresenta limitações importantes:
+
+- Nem sempre há disponibilidade por parte dessas pessoas;
+- Pode gerar desconforto ou inconveniência;
+- Não há garantia de experiência ou preparo no cuidado com animais.
+
+Dessa forma, observa-se a ausência de uma solução estruturada, acessível e confiável que conecte donos de pets a cuidadores disponíveis de forma eficiente.
+
+---
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um sistema de software que conecte donos de animais de estimação a cuidadores, facilitando a contratação de serviços temporários de cuidado de forma prática, segura e eficiente.
+
+### Objetivos Específicos
+
+- Desenvolver uma plataforma web que permita o cadastro de usuários e pets;
+- Implementar funcionalidades para solicitação de serviços de cuidado (data, horário e detalhes do pet);
+- Permitir que cuidadores se cadastrem e ofereçam seus serviços;
+- Explorar conceitos de Engenharia de Software, incluindo definição de arquitetura, modelagem e tomada de decisões de implementação;
+- Criar um sistema de interação entre usuários que favoreça confiança e usabilidade.
+
+---
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O desenvolvimento do PetShare se justifica pela necessidade real identificada no cotidiano de donos de pets, especialmente em contextos onde não há fácil acesso a serviços especializados de cuidado animal.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Além disso, há uma tendência crescente no aumento da população de animais de estimação e, consequentemente, da demanda por serviços relacionados ao seu bem-estar. Isso reforça a relevância de soluções tecnológicas que atendam esse público.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O projeto também possui caráter acadêmico, permitindo a aplicação prática de conceitos de Engenharia de Software, como levantamento de requisitos, definição de arquitetura e desenvolvimento de sistemas reais.
+
+A escolha do tema surgiu a partir de uma necessidade vivenciada por um dos integrantes do grupo, o que contribui para maior aderência do projeto à realidade e aumenta seu potencial de utilidade.
+
+---
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O sistema é direcionado a dois principais perfis de usuários:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+### Donos de Pet
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Pessoas que possuem animais de estimação e necessitam de serviços temporários de cuidado. Em geral:
+
+- Possuem rotina ocupada;
+- Valorizam praticidade e segurança;
+- Buscam soluções digitais para o dia a dia;
+- Utilizam predominantemente dispositivos móveis.
+
+### Cuidadores de Pet
+
+Pessoas interessadas em cuidar de animais, seja de forma voluntária ou remunerada. Podem incluir:
+
+- Estudantes (ex: veterinária);
+- Profissionais autônomos;
+- Pessoas que buscam renda extra.
+
+Esses usuários:
+
+- Possuem conhecimento básico de tecnologia;
+- Precisam de visibilidade e oportunidades;
+- Valorizam sistemas de avaliação e reputação.
+
+### Características Gerais
+
+- Faixa etária: majoritariamente maiores de idade;
+- Nível tecnológico: básico a intermediário;
+- Plataforma preferencial: dispositivos móveis;
+- Relação entre usuários: baseada em confiança, podendo ser mediada por sistemas de avaliação.
+
+---
+
+## Personas
+
+### Persona 1: Mariana Souza — Dona de Pet
+
+- **Idade:** 32 anos  
+- **Profissão:** Analista de Marketing Digital  
+- **Localização:** São Paulo - SP  
+
+**Características:**
+- Organizada, responsável e prática;
+- Usuária frequente de aplicativos;
+- Possui rotina híbrida e viagens frequentes.
+
+**Necessidades:**
+- Encontrar cuidadores confiáveis;
+- Garantir o bem-estar do pet;
+- Ter segurança ao delegar cuidados;
+- Utilizar uma plataforma simples e rápida.
+
+---
+
+### Persona 2: Lucas Almeida — Cuidador
+
+- **Idade:** 25 anos  
+- **Profissão:** Estudante de Medicina Veterinária  
+- **Localização:** Belo Horizonte - MG  
+
+**Características:**
+- Empático, proativo e cuidadoso;
+- Busca experiência prática e renda extra;
+- Tem disponibilidade em horários flexíveis.
+
+**Necessidades:**
+- Divulgar seus serviços;
+- Ser reconhecido por avaliações;
+- Encontrar clientes na sua região;
+- Facilitar comunicação com donos de pets.
+
+---
+
+## Papéis no Sistema
+
+Atualmente, o sistema considera três entidades principais:
+
+- **Pai de Pet (dono)**  
+- **Pet**  
+- **Cuidador**
+
+Esses papéis serão utilizados como base para a modelagem do sistema e definição das funcionalidades.
