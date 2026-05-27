@@ -6,7 +6,8 @@
 
 `7º Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O PetShare é uma aplicação web/mobile que tem como objetivo conectar donos de animais de estimação a cuidadores disponíveis para prestar serviços temporários. 
+A proposta surge a partir de uma necessidade real observada no cotidiano: a dificuldade em encontrar pessoas confiáveis para cuidar de pets em situações específicas, como viagens, compromissos profissionais ou imprevistos.
 
 ## Integrantes
 
@@ -28,6 +29,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 <ol>
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
+<li><a href="docs/Sprint 1.md"> Sprint 1</a></li>
 <li><a href="docs/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
 <li><a href="docs/03-Metodologia.md"> Metodologia</a></li>
 <li><a href="docs/04-Projeto de Interface.md"> Projeto de Interface</a></li>
