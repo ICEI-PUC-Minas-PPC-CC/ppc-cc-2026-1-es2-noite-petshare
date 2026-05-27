@@ -17,7 +17,7 @@ O sistema tem como objetivo conectar donos de pets a cuidadores, permitindo:
 
 # 📌 Diagrama de Classes
 
-![Diagrama de Classes](docs/img/diagrama-classes.png)
+![Diagrama de Classes](img/diagrama-classes.png)
 
 ---
 
