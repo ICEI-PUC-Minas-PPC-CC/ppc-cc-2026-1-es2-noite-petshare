@@ -32,6 +32,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/Sprint 1.md"> Sprint 1</a></li>
 <li><a href="docs/Sprint2.md"> Sprint 2</a></li>
 <li><a href="docs/Sprint 3.md"> Sprint 3</a></li>
+<li><a href="docs/Sprint 4.md"> Sprint 4</a></li>
 
 </ol>
 
