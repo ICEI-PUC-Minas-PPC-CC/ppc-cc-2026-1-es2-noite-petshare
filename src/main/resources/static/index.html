@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Pular para o conteudo principal</a>
+<div id="ptr" class="ptr" aria-hidden="true"><span class="ptr-spin"></span></div>
+<div id="app">
+    <header class="topbar app-shell hidden" id="dashboard-topbar">
+        <div class="brand">PetShare</div>
+        <p class="breadcrumb" aria-live="polite">
+            <span>Dashboard</span>
+            <span class="breadcrumb-sep">/</span>
+            <span id="breadcrumb-current">Perfil</span>
+        </p>
+        <div class="topbar-right">
+            <button class="icon-btn" id="btn-open-notifications" aria-label="Notificacoes">🔔</button>
+            <button class="icon-btn" id="btn-logout" aria-label="Sair">⎋</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="view-landing" class="view">
+            <header class="landing-nav">
+                <div class="brand">PetShare</div>
+                <div class="landing-nav-actions">
+                    <button class="btn btn-ghost" data-go-auth="login">Entrar</button>
+                    <button class="btn btn-primary" data-go-auth="register">Comecar gratis</button>
+                </div>
+            </header>
+
+            <section class="hero container-lg reveal">
+                <div>
+                    <p class="eyebrow">SaaS para clinicas e operacoes pet care</p>
+                    <h1>Coordene cuidadores, agendas e qualidade de atendimento em um unico painel.</h1>
+                    <p class="hero-subtitle">O PetShare conecta tutores, cuidadores e equipes de clinicas com fluxo completo de solicitacoes, notificacoes e acompanhamento em tempo real.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" data-go-auth="register">Solicitar teste gratis</button>
+                        <button class="btn btn-secondary" data-go-auth="login">Entrar no dashboard</button>
+                    </div>
+                </div>
+                <article class="mockup-card">
+                    <h3>Visao operacional em tempo real</h3>
+                    <ul>
+                        <li>Fila de solicitacoes por prioridade</li>
+                        <li>Status de cuidado por tutor e cuidador</li>
+                        <li>Indicadores de resposta e qualidade</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Beneficios para a clinica</h2>
+                <div class="feature-grid">
+                    <article class="tile">Onboarding rapido de equipe e cuidadores</article>
+                    <article class="tile">Menos retrabalho com fluxos padronizados</article>
+                    <article class="tile">Visibilidade total da jornada do atendimento</article>
+                    <article class="tile">Gestao de pets e historico centralizado</article>
+                    <article class="tile">Notificacoes acionaveis em tempo real</article>
+                    <article class="tile">Seguranca de dados e rastreabilidade</article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Como funciona</h2>
+                <div class="steps">
+                    <article class="step">Cadastro do tutor e pet em minutos</article>
+                    <article class="step">Busca inteligente de cuidadores</article>
+                    <article class="step">Solicitacao e aprovacao com status</article>
+                    <article class="step">Notificacao, acompanhamento e avaliacao</article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Demonstracao do produto</h2>
+                <div class="demo-grid">
+                    <article class="tile">Dashboard operacional</article>
+                    <article class="tile">Gestao de agendas</article>
+                    <article class="tile">IA para analise de sentimentos</article>
+                    <article class="tile">Timeline de notificacoes</article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Funcionalidades essenciais</h2>
+                <div class="feature-grid">
+                    <article class="tile">Cadastro e login com perfis DONO e CUIDADOR</article>
+                    <article class="tile">Cadastro de pet com informacoes clinicas</article>
+                    <article class="tile">Busca de cuidadores com filtros</article>
+                    <article class="tile">Solicitacoes diretas com validacao de datas</article>
+                    <article class="tile">Notificacoes de aceite e recusa</article>
+                    <article class="tile">Base pronta para chat e avaliacao</article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Planos</h2>
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <h3>Free</h3>
+                        <p>Operacao inicial com recursos essenciais.</p>
+                    </article>
+                    <article class="pricing-card featured">
+                        <h3>Premium</h3>
+                        <p>Fluxo completo com automacoes e suporte prioritario.</p>
+                    </article>
+                    <article class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <p>Governanca, integrações e escala multiunidade.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>Depoimentos</h2>
+                <div class="feature-grid">
+                    <article class="tile">"Reduzimos o tempo de resposta em 37% no primeiro mes."</article>
+                    <article class="tile">"Agora o tutor acompanha tudo e nossa equipe trabalha com menos atrito."</article>
+                </div>
+            </section>
+
+            <section class="container-lg section reveal">
+                <h2>FAQ</h2>
+                <details class="faq-item">
+                    <summary>Quanto tempo leva para iniciar?</summary>
+                    <p>Em poucas horas sua equipe ja consegue cadastrar tutores, pets e iniciar solicitacoes.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Funciona no celular da equipe?</summary>
+                    <p>Sim. O sistema foi estruturado em mobile first e adaptado para tablet e desktop.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Ja existe recurso de IA?</summary>
+                    <p>A plataforma possui fundacao para IA de sentimento e priorizacao de atendimento em evolucao incremental.</p>
+                </details>
+            </section>
+
+            <section class="container-lg section cta-final reveal">
+                <h2>Pronto para operar com mais previsibilidade?</h2>
+                <p>Crie sua conta e teste o PetShare com sua equipe hoje mesmo.</p>
+                <button class="btn btn-primary" data-go-auth="register">Comecar agora</button>
+            </section>
+
+            <footer class="landing-footer">
+                <a href="#">Contato</a>
+                <a href="#">Politica de Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Redes sociais</a>
+            </footer>
+        </section>
+
+        <section id="view-auth" class="view hidden">
+            <div class="auth-wrap">
+                <header class="auth-header">
+                    <button class="btn btn-ghost" id="btn-back-landing">← Home</button>
+                    <h2 id="auth-title">Acessar</h2>
+                </header>
+                <div class="auth-tabs">
+                    <button class="tab-btn active" data-auth-tab="login">Login</button>
+                    <button class="tab-btn" data-auth-tab="register">Cadastro</button>
+                </div>
+
+                <form id="login-form" class="card form-panel" novalidate>
+                    <label>Email <input required type="email" name="email"></label>
+                    <label>Senha <input required type="password" name="senha"></label>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+
+                <form id="cadastro-form" class="card form-panel hidden" novalidate>
+                    <label>Nome <input required name="nome"></label>
+                    <label>Email <input required type="email" name="email"></label>
+                    <label>Senha <input required type="password" name="senha"></label>
+                    <label>Confirmar senha <input required type="password" name="confirmarSenha"></label>
+                    <label>Telefone <input name="telefone"></label>
+                    <label>Tipo
+                        <select name="tipo" required>
+                            <option value="DONO">Dono</option>
+                            <option value="CUIDADOR">Cuidador</option>
+                        </select>
+                    </label>
+                    <label>Descricao <input name="descricao"></label>
+                    <label>Disponibilidade <input name="disponibilidade"></label>
+                    <label>Foto URL <input name="fotoUrl" placeholder="https://..."></label>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="view-dashboard" class="view hidden">
+            <div class="container-lg dashboard-layout">
+                <aside class="dashboard-side card">
+                    <h3>Painel</h3>
+                    <p id="usuario-info"></p>
+                    <div class="quick-actions">
+                        <button class="btn btn-secondary" type="button" data-panel-target="home">Inicio</button>
+                        <button class="btn btn-secondary" type="button" data-panel-target="solicitacoes">Nova solicitacao</button>
+                        <button class="btn btn-ghost" type="button" data-panel-target="notificacoes">Ver notificacoes</button>
+                    </div>
+                </aside>
+
+                <section class="dashboard-main">
+                    <section class="panel card" data-panel="home">
+                        <h2 id="home-saudacao">Ola!</h2>
+                        <p class="home-sub">Resumo do seu dia no PetShare.</p>
+                        <div id="home-stats" class="home-stats"></div>
+                        <div class="quick-actions home-actions">
+                            <button class="btn btn-primary" type="button" id="home-busca-cta" data-panel-target="cuidadores">Buscar cuidador</button>
+                            <button class="btn btn-secondary" type="button" data-panel-target="solicitacoes">Minhas solicitacoes</button>
+                            <button class="btn btn-ghost" type="button" data-panel-target="notificacoes">Notificacoes</button>
+                        </div>
+                        <h3 class="home-section-title">Solicitacoes recentes</h3>
+                        <div id="home-recentes" class="home-recentes" aria-live="polite"></div>
+                    </section>
+
+                    <section class="panel card hidden" data-panel="perfil">
+                        <h2>Perfil</h2>
+                        <form id="perfil-form">
+                            <label>Nome <input name="nome"></label>
+                            <label>Telefone <input name="telefone"></label>
+                            <label>Descricao <input name="descricao"></label>
+                            <label>Disponibilidade <input name="disponibilidade"></label>
+                            <label>Foto URL <input name="fotoUrl"></label>
+                            <button type="submit" class="btn btn-primary">Salvar perfil</button>
+                        </form>
+                    </section>
+
+                    <section class="panel card hidden" data-panel="pets" id="pets-section">
+                        <h2>Cadastro de Pet</h2>
+                        <form id="pet-form">
+                            <div class="grid-2">
+                                <label>Nome <input required name="nome"></label>
+                                <label>Especie <input required name="especie"></label>
+                                <label>Raca <input name="raca"></label>
+                                <label>Idade <input name="idade" type="number" min="0"></label>
+                                <label>Porte <input name="porte"></label>
+                                <label>Necessidades especiais <input name="necessidadesEspeciais"></label>
+                            </div>
+                            <label>Observacoes <textarea name="historico" rows="2"></textarea></label>
+                            <button type="submit" class="btn btn-primary">Cadastrar pet</button>
+                        </form>
+                        <ul id="lista-pets" class="list" aria-live="polite"></ul>
+                    </section>
+
+                    <section class="panel card hidden" data-panel="cuidadores" id="cuidadores-section">
+                        <h2>Busca de cuidadores</h2>
+                        <div class="search-grid">
+                            <label>Busca <input id="filtro-busca" placeholder="Nome ou descricao"></label>
+                            <label>Raio
+                                <select id="filtro-raio">
+                                    <option value="todos">Todos</option>
+                                    <option value="5">Ate 5 km</option>
+                                    <option value="10">Ate 10 km</option>
+                                </select>
+                            </label>
+                            <label>Valor
+                                <select id="filtro-valor">
+                                    <option value="todos">Todos</option>
+                                    <option value="baixo">Mais acessiveis</option>
+                                    <option value="alto">Mais premium</option>
+                                </select>
+                            </label>
+                            <label>Avaliacao
+                                <select id="filtro-avaliacao">
+                                    <option value="todos">Todas</option>
+                                    <option value="4">4+ estrelas</option>
+                                    <option value="5">5 estrelas</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button id="btn-carregar-cuidadores" class="btn btn-secondary" type="button">Atualizar lista</button>
+                        <div id="lista-cuidadores" class="cards-list" aria-live="polite"></div>
+                    </section>
+
+                    <section class="panel card hidden" data-panel="solicitacoes" id="solicitacao-section">
+                        <h2>Meus pedidos</h2>
+                        <div class="seg-tabs" id="pedidos-tabs">
+                            <button class="seg-btn active" type="button" data-status-tab="ativos">Ativos</button>
+                            <button class="seg-btn" type="button" data-status-tab="andamento">Em andamento</button>
+                            <button class="seg-btn" type="button" data-status-tab="finalizados">Finalizados</button>
+                        </div>
+                        <button id="btn-carregar-solicitacoes" class="btn btn-ghost" type="button">Atualizar</button>
+                        <div id="lista-solicitacoes" aria-live="polite"></div>
+                    </section>
+
+                    <section class="panel card hidden" data-panel="notificacoes" id="notificacoes-section">
+                        <h2>Notificacoes e status</h2>
+                        <button id="btn-carregar-notificacoes" class="btn btn-secondary" type="button">Atualizar notificacoes</button>
+                        <ul id="lista-notificacoes" class="list" aria-live="polite"></ul>
+                    </section>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav app-shell hidden" id="dashboard-bottom-nav">
+        <button class="bottom-item active" data-panel-target="home">Inicio</button>
+        <button class="bottom-item" data-panel-target="pets" id="nav-pets">Pets</button>
+        <button class="bottom-item" data-panel-target="cuidadores">Busca</button>
+        <button class="bottom-item" data-panel-target="solicitacoes">Pedidos</button>
+        <button class="bottom-item" data-panel-target="notificacoes">Avisos</button>
+        <button class="bottom-item" data-panel-target="perfil">Perfil</button>
+    </nav>
+
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <div id="global-loading" class="global-loading hidden" aria-live="assertive" aria-busy="true">
+        <div class="loading-card">
+            <div class="loader"></div>
+            <p id="global-loading-text">Carregando...</p>
+        </div>
+    </div>
+
+    <div id="sheet-solicitacao" class="sheet-backdrop hidden">
+        <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-sol-title">
+            <header class="sheet-header">
+                <h3 id="sheet-sol-title">Solicitar cuidado</h3>
+                <button class="icon-btn" type="button" data-close-sheet="sheet-solicitacao" aria-label="Fechar">✕</button>
+            </header>
+            <p class="sheet-sub" id="sol-cuidador-nome"></p>
+            <form id="solicitacao-form">
+                <input type="hidden" name="cuidadorId" id="sol-cuidador">
+                <label>Pet
+                    <select name="petId" id="sol-pet" required></select>
+                </label>
+                <div class="grid-2">
+                    <label>Data inicio <input type="date" name="dataInicio" required></label>
+                    <label>Data fim <input type="date" name="dataFim" required></label>
+                </div>
+                <label>Hora <input type="time" name="hora"></label>
+                <label>Observacoes <textarea name="observacoes" rows="2"></textarea></label>
+                <button type="submit" class="btn btn-primary">Confirmar pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sheet-chat" class="sheet-backdrop hidden">
+        <div class="sheet sheet-tall" role="dialog" aria-modal="true" aria-labelledby="sheet-chat-title">
+            <header class="sheet-header">
+                <h3 id="sheet-chat-title">Chat</h3>
+                <button class="icon-btn" type="button" data-close-sheet="sheet-chat" aria-label="Fechar">✕</button>
+            </header>
+            <div id="chat-mensagens" class="chat-mensagens" aria-live="polite"></div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Escreva uma mensagem" autocomplete="off" required>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

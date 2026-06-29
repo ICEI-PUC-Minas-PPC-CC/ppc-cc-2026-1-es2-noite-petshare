@@ -1,0 +1,24 @@
+# Build
+target/
+build/
+out/
+
+# Banco H2 (file-based)
+*.mv.db
+*.trace.db
+*.lock.db
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Sistema
+.DS_Store
+Thumbs.db
