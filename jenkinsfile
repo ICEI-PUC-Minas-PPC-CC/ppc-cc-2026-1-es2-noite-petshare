@@ -1,0 +1,38 @@
+pipeline{
+    agent any
+
+    tools{
+        maven 'Maven'
+        jdk 'JDK17'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+    
+        stage('Testes'){
+            steps {
+                dir('src'){
+                    sh 'mvn clean test'
+                }
+            }
+        }
+    
+        stage('Empacotar'){
+            steps{
+                dir('src'){
+                    sh 'mvn package -DskipTests'
+                }
+            }
+        }
+    }
+
+    post{
+        always{
+            junit '**/target/surefile-reports/*.xml'
+        }
+    }
+}
