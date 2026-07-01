@@ -14,13 +14,11 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                dir('src') {
-                    script {
-                        if (isUnix()) {
-                            sh 'mvn clean test'
-                        } else {
-                            bat 'mvn clean test'
-                        }
+                script {
+                    if (isUnix()) {
+                        sh 'mvn clean test'
+                    } else {
+                        bat 'mvn clean test'
                     }
                 }
             }
@@ -28,13 +26,11 @@ pipeline {
 
         stage('Package') {
             steps {
-                dir('src') {
-                    script {
-                        if (isUnix()) {
-                            sh 'mvn package -DskipTests'
-                        } else {
-                            bat 'mvn package -DskipTests'
-                        }
+                script {
+                    if (isUnix()) {
+                        sh 'mvn package -DskipTests'
+                    } else {
+                        bat 'mvn package -DskipTests'
                     }
                 }
             }

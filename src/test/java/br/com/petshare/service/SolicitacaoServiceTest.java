@@ -1,6 +1,5 @@
 package br.com.petshare.service;
 
-import br.com.petshare.dto.AtualizarStatusRequest;
 import br.com.petshare.dto.SolicitacaoRequest;
 import br.com.petshare.model.Pet;
 import br.com.petshare.model.SolicitacaoCuidado;
