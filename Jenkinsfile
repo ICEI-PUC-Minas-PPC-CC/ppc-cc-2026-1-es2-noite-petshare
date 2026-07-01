@@ -12,9 +12,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh './mvnw -B clean test'
+                        sh 'mvn -B clean test'
                     } else {
-                        bat 'mvnw.cmd -B clean test'
+                        bat 'mvn -B clean test'
                     }
                 }
             }
@@ -24,9 +24,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh './mvnw -B package -DskipTests'
+                        sh 'mvn -B package -DskipTests'
                     } else {
-                        bat 'mvnw.cmd -B package -DskipTests'
+                        bat 'mvn -B package -DskipTests'
                     }
                 }
             }
