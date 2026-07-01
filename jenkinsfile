@@ -1,7 +1,7 @@
-pipeline{
+pipeline {
     agent any
 
-    tools{
+    tools {
         maven 'Maven'
         jdk 'JDK17'
     }
@@ -12,27 +12,39 @@ pipeline{
                 checkout scm
             }
         }
-    
-        stage('Testes'){
+
+        stage('Build & Test') {
             steps {
-                dir('src'){
-                    sh 'mvn clean test'
+                dir('src') {
+                    script {
+                        if (isUnix()) {
+                            sh 'mvn clean test'
+                        } else {
+                            bat 'mvn clean test'
+                        }
+                    }
                 }
             }
         }
-    
-        stage('Empacotar'){
-            steps{
-                dir('src'){
-                    sh 'mvn package -DskipTests'
+
+        stage('Package') {
+            steps {
+                dir('src') {
+                    script {
+                        if (isUnix()) {
+                            sh 'mvn package -DskipTests'
+                        } else {
+                            bat 'mvn package -DskipTests'
+                        }
+                    }
                 }
             }
         }
     }
 
-    post{
-        always{
-            junit '**/target/surefile-reports/*.xml'
+    post {
+        always {
+            junit 'src/target/surefire-reports/*.xml'
         }
     }
 }
