@@ -11,8 +11,10 @@ pipeline {
         stage('Build & Test') {
             steps {
                 script {
-                    docker.image('maven:3.9.8-eclipse-temurin-17').inside('-v $HOME/.m2:/root/.m2') {
-                        sh 'mvn -B clean test'
+                    if (isUnix()) {
+                        sh './mvnw -B clean test'
+                    } else {
+                        bat 'mvnw.cmd -B clean test'
                     }
                 }
             }
@@ -21,8 +23,10 @@ pipeline {
         stage('Package') {
             steps {
                 script {
-                    docker.image('maven:3.9.8-eclipse-temurin-17').inside('-v $HOME/.m2:/root/.m2') {
-                        sh 'mvn -B package -DskipTests'
+                    if (isUnix()) {
+                        sh './mvnw -B package -DskipTests'
+                    } else {
+                        bat 'mvnw.cmd -B package -DskipTests'
                     }
                 }
             }
