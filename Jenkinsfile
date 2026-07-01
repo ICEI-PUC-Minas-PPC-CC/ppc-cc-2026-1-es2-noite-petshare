@@ -1,8 +1,9 @@
 pipeline {
-    agent any
-
-    tools {
-        maven 'Maven_3.9'
+    agent {
+        docker {
+            image 'maven:3.9.8-eclipse-temurin-17'
+            args '-v $HOME/.m2:/root/.m2'
+        }
     }
 
     stages {
@@ -14,31 +15,20 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                script {
-                    if (isUnix()) {
-                        sh 'mvn clean test'
-                    } else {
-                        bat 'mvn clean test'
-                    }
-                }
+                sh 'mvn -B clean test'
             }
         }
 
         stage('Package') {
             steps {
-                script {
-                    if (isUnix()) {
-                        sh 'mvn package -DskipTests'
-                    } else {
-                        bat 'mvn package -DskipTests'
-                    }
-                }
+                sh 'mvn -B package -DskipTests'
             }
         }
     }
+
     post {
         always {
-            junit allowEmptyResults: true, testResults: 'src/target/surefire-reports/*.xml'
+            junit 'target/surefire-reports/*.xml'
         }
     }
 }
