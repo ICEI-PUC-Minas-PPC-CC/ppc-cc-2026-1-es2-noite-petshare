@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.8-eclipse-temurin-17'
-            args '-v $HOME/.m2:/root/.m2'
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -15,13 +10,21 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn -B clean test'
+                script {
+                    docker.image('maven:3.9.8-eclipse-temurin-17').inside('-v $HOME/.m2:/root/.m2') {
+                        sh 'mvn -B clean test'
+                    }
+                }
             }
         }
 
         stage('Package') {
             steps {
-                sh 'mvn -B package -DskipTests'
+                script {
+                    docker.image('maven:3.9.8-eclipse-temurin-17').inside('-v $HOME/.m2:/root/.m2') {
+                        sh 'mvn -B package -DskipTests'
+                    }
+                }
             }
         }
     }
